@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Um quiz interativo para testar seus conhecimentos">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz de futebol</title>
+</head>
+<body>
+    <header>
+        <h1>Quiz interativo sobre futebol</h1>
+        <p>Teste seus conhecimentos sobre futebol e veja se você é um boleiro!</p>
+    </header>
+    <main>
+        <!-- introducao -->
+        <section>
+            <h2>Sobre este quiz:</h2>
+            <p>Este site traz um quiz de <strong>futebol</strong> para testar o quanto você <abbr title="conhece">manja</abbr> de <em>seleções</em>, <em>craques</em> e <em>jogos inesquecíveis</em>.</p>
+            <p>São perguntas de múltipla escolha fáceis de responder! <br>Basta clicar na opção que você acha certa.</p>
+            <p>No fim, descubra sua pontuação e desafie os amigos para ver quem é o maior torcedor!</p>
+        </section>
+        <!-- Pergunta 1: Múltipla escolha. -->
+        <section>
+            <h2>1: Qual jogador de futebol possui mais títulos da Copa do Mundo da FIFA?</h2>
+            <form>
+                <input type="radio" value="Cristiano Ronaldo" id="p1a" name="pergunta1">
+                <label for="p1a">Cristiano Ronaldo</label><br>
+                <input type="radio" value="Ronaldo Fenômeno" id="p1b" name="pergunta1">
+                <label for="p1b">Ronaldo Fenômeno</label><br>
+                <input type="radio" value="Lionel Messi" id="p1c" name="pergunta1">
+                <label for="p1c">Lionel Messi</label><br>
+                <input type="radio" value="Pelé" id="p1d" name="pergunta1">
+                <label for="p1d">Pelé</label><br>
+            </form>
+        </section>
+        <!-- Pergunta 2: texto -->
+        <section>
+            <h2>2: O que significa a sigla CBF?</h2>
+            <form>
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite aqui...">
+            </form>
+        </section>
+        <!-- Pergunta 3: senha -->
+        <section>
+            <h2>3: Qual o time mais ladrão de todos os tempos?</h2>
+            <form>
+                <input type="password" id="p3" name="pergunta3" placeholder="Digite aqui...">
+            </form>
+        </section>
+        <!-- Pergunta 4: data -->
+        <section>
+            <h2>4: Em que ano o Brasil ganhou a última Copa do Mundo da FIFA?</h2>
+            <form>    
+                <input type="date" id="p4" name="pergunta4">
+            </form>
+        </section>
+        <!-- Pergunta 5: seleção múltipla -->
+        <section>
+            <h2>5: Em quais times Lionel Messi já jogou?</h2>
+            <form>
+                <input type="checkbox" id="p5a" name="pergunta5" value="PSG">
+                <label for="p5a">PSG</label>
+                <input type="checkbox" id="p5b" name="pergunta5" value="Real Madrid">
+                <label for="p5b">Real Madrid</label>
+                <input type="checkbox" id="p5c" name="pergunta5" value="Barcelona">
+                <label for="p5c">Barcelona</label>
+                <input type="checkbox" id="p5d" name="pergunta5" value="Inter Miami">
+                <label for="p5d">Inter Miami</label>
+            </form>
+        </section>
+        <!-- Pergunta 6: upload-->
+        <section>
+            <h2>6: Prove que você é um fã de futebol. Faça <em>upload</em> de qualquer imagem sobre futebol que tenha salva em sua galeria:</h2>
+            <form>
+                <input type="file" id="p6" name="pergunta6">
+            </form>
+        </section>
+        <!-- Pergunta 7: menu suspenso -->
+        <section>
+            <h2>7:  Selecione a palavra complete a frase:<br>"É dado o nome de _________ ao passe feito para o jogador que marcou o gol"
+            </h2>
+            <form>
+                <select name="pergunta7" id="p7">
+                    <option value="Carrinho">Carrinho</option>
+                    <option value="Assistencia">Assistência</option>
+                    <option value="Golaco">Golaço</option>
+                    <option value="Tabela">Tabela</option>
+                </select>
+            </form>
+        </section>
+        <!-- Pergunta 8: imagem -->
+        <section>
+            <h2>8: Qual o SOBRENOME famoso desse treinador?</h2>
+            <figure>
+                <img src="assets/Felipao-2.jpg" alt="Imagem do treinador Felipão">
+                <figcaption>Friedemann Vogel/Getty Images</figcaption> <br>
+            </figure>
+            <form>
+                <input type="radio" value="Felipao" id="p8a" name="pergunta8">
+                <label for="p8a">Felipão</label><br>
+                <input type="radio" value="Felipinho" id="p8b" name="pergunta8">
+                <label for="p8b">Felipinho</label><br>
+                <input type="radio" value="Scolari" id="p8c" name="pergunta8">
+                <label for="p8c">Scolari</label><br>
+                <input type="radio" value="Pao" id="p8d" name="pergunta8">
+                <label for="p8d">Pão</label><br>
+            </form>
+        </section>
+        <!-- Tabela de pontuação -->
+        <section>
+            <h2>Tabela de pontuação</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Pontuação</th>
+                        <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-2</td>
+                        <td>Não desista! Tente novamente.</td>
+                    </tr>
+                    <tr>
+                        <td>3-5</td>
+                        <td>Ainda dá para melhorar!</td>
+                    </tr>
+                    <tr>
+                        <td>6-7</td>
+                        <td>Você é um grande fã de futebol.</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Parabéns! Você é um baita viciado no mundo do futebol!</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Boa sorte na próxima! Estude mais.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+         <!-- Lista de respostas -->
+        <section>
+            <h2>Verifique suas respostas</h2>
+            <details>
+                <summary>Clique aqui para ver as respostas do quiz</summary>
+                <ol>
+                    <li>Pelé</li>
+                    <li>Confederação Brasileira de Futebol</li>
+                    <li>Corinthians</li>
+                    <li>2002</li>
+                    <li>PSG, Barcelona e Inter Miami</li>
+                    <li>Deve ter extensão .png</li>
+                    <li>Assistência</li>
+                    <li>Scolari</li>
+                </ol>
+            </details>
+        </section>
+          <!-- Formulário de feedback -->
+        <section>
+            <h2>Nos dê o seu feedback</h2>
+            <form>
+                <fieldset>
+                    <legend>Informações de contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br>   
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="comentarios">Comentários:</label><br>
+                    <textarea name="comentarios" id="comentarios" rows="4" cols="50" placeholder="Digite seus feedbacks aqui..."></textarea><br>
+                    <button onclick="alert('Feedback enviado')">Enviar</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p class="paragrafo-footer">&copy Quiz de Futebol. Todos os direitos reservados.</p>
+        <p class="paragrafo-footer">Para conhecer mais sobre mim <a target="_blank" href="sobremim.html">clique aqui</a>.</p>
+    </footer>
+</body>
+</html>
